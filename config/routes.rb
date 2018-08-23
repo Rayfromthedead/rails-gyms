@@ -1,3 +1,35 @@
 Rails.application.routes.draw do
+  resources :trainers
+  resources :users
+  resources :gym_classes
+  resources :sign_ups
+  get 'trainers/new'
+  get 'trainers/create'
+  get 'trainers/update'
+  get 'trainers/edit'
+  get 'trainers/destroy'
+  get 'trainers/index'
+  get 'trainers/show'
+  get 'classes/new'
+  get 'classes/create'
+  get 'classes/update'
+  get 'classes/edit'
+  get 'classes/destroy'
+  get 'classes/index'
+  get 'classes/show'
+  get 'sign_ups/new'
+  get 'sign_ups/create'
+  get 'sign_ups/update'
+  get 'sign_ups/edit'
+  get 'sign_ups/destroy'
+  get 'sign_ups/index'
+  get 'sign_ups/show'
+  get 'users/new'
+  get 'users/create'
+  get 'users/update'
+  get 'users/edit'
+  get 'users/destroy'
+  get 'users/index'
+  get 'users/show'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
